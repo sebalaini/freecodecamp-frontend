@@ -1,0 +1,82 @@
+/***************
+HEADER
+***************/
+
+header {
+  top: 0;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 150px;
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include tablet {
+    background: white;
+    flex-direction: row;
+    position: fixed;
+  }
+}
+
+.logo {
+  & {
+    display: flex;
+    width: 300px;
+    height: 120px;
+    margin: 15px auto;
+    float: left;
+  }
+  @include tablet {
+    margin-left: 30px;
+  }
+}
+
+#header-img {
+  width: 300px;
+  height: 100px;
+  max-width: 300px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+
+/***************
+NAV
+***************/
+
+nav {
+  & {
+    @include mobile {
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 30px;
+      font-weight: 400;
+    }
+    @include tablet {
+      justify-content: flex-end;
+      flex-direction: row;
+    }
+  }
+
+  li {
+     padding: 6px;
+  }
+
+  ul {
+    @include mobile {
+      width: 35vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+}

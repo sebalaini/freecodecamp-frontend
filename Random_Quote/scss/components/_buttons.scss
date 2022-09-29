@@ -1,0 +1,25 @@
+/***************
+BUTTONS
+***************/
+
+.button {
+  height: 38px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #26292e;
+  outline: none;
+  font-size: 0.85em;
+  padding: 8px 18px 6px 18px;
+  margin-top: 30px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+    
+#new_quote {
+  float: right;
+}

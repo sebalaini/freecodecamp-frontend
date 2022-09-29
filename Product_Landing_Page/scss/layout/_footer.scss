@@ -1,0 +1,25 @@
+/***************
+FOOTER
+***************/
+
+footer {
+  margin-top: 50px;
+  padding: 20px;
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+
+    li {
+      padding: 0 10px;
+    }
+  }
+
+  span {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+  }
+}
